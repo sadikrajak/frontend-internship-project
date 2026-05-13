@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainee Joining Details</title>
+    <link rel="stylesheet" type="text/css" href="../styles/trainee-joining-details.css"> 
+</head>
+
+
+<body>
+<div class="container">
+    <h2>Trainee Joining Details</h2>
+    <!-- <form action="/submit-joining-form" method="post" enctype="multipart/form-data"> -->
+        <form > 
+        <!-- Personal Information -->
+        <h3>Personal Information</h3>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        <br><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <!-- Educational Information -->
+        <h3>Educational Information</h3>
+        <label for="studentID">Trainee ID:</label>
+        <input type="text" id="studentID" name="studentID" required>
+
+        <label for="program">Internship Domain:</label>
+        <input type="text" id="program" name="program" required>
+
+        <!-- Identification Documents -->
+        <h3>Identification Documents</h3>
+        <label for="idDocument">Upload ID Document:</label>
+        <input type="file" id="idDocument" name="idDocument" accept=".pdf, .jpg, .jpeg, .png" required>
+
+        <!-- Medical History -->
+        <h3>Medical History</h3>
+        <label for="medicalHistory">Medical History:</label>
+        <textarea id="medicalHistory" name="medicalHistory" rows="4" required></textarea>
+
+        <!-- Emergency Contact Information -->
+        <h3>Emergency Contact Information</h3>
+        <label for="emergencyContactName">Emergency Contact Name:</label>
+        <input type="text" id="emergencyContactName" name="emergencyContactName" required>
+              
+        
+
+        <label for="emergencyContactNumber">Emergency Contact Number:</label>
+        <input type="tel" id="emergencyContactNumber" name="emergencyContactNumber" required pattern="[0-9]{10}">
+
+
+
+        <!-- Additional Documents -->
+        <h3>Additional Documents</h3>
+        <label for="otherDocuments">Upload Other Documents (valid government-approved address ID proof):</label>
+        <input type="file" id="otherDocuments" name="otherDocuments[]" accept=".pdf, .jpg, .jpeg, .png" multiple>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Joining Form</button>
+    </form>
+
+    <br>
+
+    <footer>
+        &copy; 2023 Myshow4all. All Rights Reserved.
+    </footer>
+
+</div>
+</body>
+</html>

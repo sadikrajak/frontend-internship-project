@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainee Feedback</title>
+  <link rel="stylesheet" type="text/css" href="../styles/trainee-feedback-form.css">   
+</head>
+
+<body>
+  <div class="container">
+    <h2>Trainee Feedback Form</h2>
+    <form id="feedback-form">
+      <label for="traineeID">Trainee ID:</label>
+      <input type="text" id="traineeID" name="traineeID" required>
+
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="contactNumber">Contact Number:</label>
+      <input type="tel" id="contactNumber" name="contactNumber" required pattern="[0-9]{10}">
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="qualityRating">Quality of Training/Mentorship (1-5):</label>
+      <input type="number" id="qualityRating" name="qualityRating" min="1" max="5" required>
+
+      <label for="tasksRating">Relevance of Tasks/Projects (1-5):</label>
+      <input type="number" id="tasksRating" name="tasksRating" min="1" max="5" required>
+
+      <label for="communicationRating">Communication with Instructors (1-5):</label>
+      <input type="number" id="communicationRating" name="communicationRating" min="1" max="5" required>
+
+      <label for="goalsRating">Clarity of Goals and Objectives (1-5):</label>
+      <input type="number" id="goalsRating" name="goalsRating" min="1" max="5" required>
+
+      <label for="satisfactionRating">Overall Satisfaction (1-5):</label>
+      <input type="number" id="satisfactionRating" name="satisfactionRating" min="1" max="5" required>
+
+      <label for="challenges">Did you face any challenges during your internship? If so, please describe.</label>
+      <textarea id="challenges" name="challenges" rows="4"></textarea>
+
+      <label for="valuableAspects">What aspects of the internship program did you find most valuable?</label>
+      <textarea id="valuableAspects" name="valuableAspects" rows="4"></textarea>
+
+      <label for="improvementSuggestions">What aspects of the program do you think could be improved?</label>
+      <textarea id="improvementSuggestions" name="improvementSuggestions" rows="4"></textarea>
+
+      <label for="careerAlignment">How well did the program align with your career goals?</label>
+      <textarea id="careerAlignment" name="careerAlignment" rows="4"></textarea>
+
+      <label for="recommendation">Would You Recommend Us?</label>
+      <select id="recommendation" name="recommendation" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+    
+    <footer>
+      &copy; 2023 myshow4all. All Rights Reserved.
+    </footer>
+  </div>
+</body>
+</html>
